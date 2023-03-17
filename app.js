@@ -10,7 +10,7 @@ async function database() {
   await mongoose.connect(process.env.MONGODB_URI);
   console.log('Connected to databse!');
 }
-database().catch((e) => {
+database().catch((error) => {
   console.log('database-error:', error);
 });
 
